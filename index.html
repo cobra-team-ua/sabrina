@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Навчіться заробляти на TikTok вже сьогодні! Проста система для створення відео та монетизації контенту без складних навичок.">
+    <meta name="keywords" content="заробіток на TikTok, монетизація TikTok, заробляти онлайн, пасивний дохід, відео TikTok">
+    <title>TikTok Cash - Заробіток на TikTok вже сьогодні</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Секція 1: Презентація -->
+    <section class="hero-section active" id="section1">
+        <div class="container">
+                      <h1 class="hero-title">Заробляйте на TikTok вже сьогодні!</h1>
+            <div class="profile-wrapper">
+                <div class="profile-photo">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXEYShjP0PgAY87BNUj3ATjcTSjUxOJqaTlw&s" alt="Фото Сабріни">
+                    <div class="glow-effect"></div>
+                </div>
+            </div>
+            <p class="hero-subtitle">Привіт! Я – Сабріна, експерт із 5+ роками досвіду в TikTok-монетизації. Покажу, як у 3 простих кроки почати заробляти на відео – не через пів року, а прямо зараз!</p>
+            <button class="cta-btn" onclick="showSection(2)">Дізнатися як</button>
+        </div>
+        <div class="floating-shapes">
+            <span class="shape shape-1"></span>
+            <span class="shape shape-2"></span>
+            <span class="shape shape-3"></span>
+            <span class="shape shape-4"></span>
+        </div>
+    </section>
+
+    <!-- Секція 2: Калькулятор доходу -->
+    <section class="calculator-section" id="section2">
+        <div class="container">
+            <h1 class="section-title">Скільки ви можете заробляти?</h1>
+            <p class="section-subtitle">Вкажіть, скільки відео на день готові завантажувати та скільки TikTok-акаунтів вести, щоб дізнатися ваш потенційний дохід.</p>
+            <div class="calculator">
+                <div class="slider-group">
+                    <label>Відео на день (0-5):</label>
+                    <input type="range" min="0" max="5" value="1" id="videosSlider" oninput="calculateIncome()">
+                    <span id="videosValue">1</span>
+                </div>
+                <div class="slider-group">
+                    <label>Кількість акаунтів (0-10):</label>
+                    <input type="range" min="0" max="10" value="1" id="accountsSlider" oninput="calculateIncome()">
+                    <span id="accountsValue">1</span>
+                </div>
+                <div class="income-result">
+                    <h2>Ваш потенційний дохід: <span id="income">$3</span></h2>
+                </div>
+            </div>
+            <div class="motivation-box">
+                <p>Заробляти на TikTok простіше, ніж ви думаєте! Лише кілька відео на день – і ви вже на шляху до фінансової свободи. Почніть сьогодні, і ваші мрії стануть реальністю!</p>
+            </div>
+            <button class="cta-btn" onclick="showSection(3)">Далі</button>
+        </div>
+    </section>
+
+    <!-- Секція 3: Приклади заробітку -->
+    <section class="examples-section" id="section3">
+        <div class="container">
+            <h1 class="section-title">Заробіток наших учнів</h1>
+            <p class="section-subtitle">Реальні історії успіху людей, які заробляють на TikTok, використовуючи нашу систему.</p>
+            <div class="examples-grid">
+                <div class="example-card example-left">
+                    <h3>Софія М******</h3>
+                    <img src="https://i.ibb.co/v4QGN2BY/617ff3a2cf4e7b8998c690f8-5efb74169727e79ec77b7bca-raskrutka-tiktok-opisanie-1024x943.png" alt="TikTok Лайфстайл">
+                    <div class="stats">
+                        <span>30 днів</span>
+                        <span>3 акаунти</span>
+                        <span class="income">$2700</span>
+                    </div>
+                    <p class="description">Софія почала з одного відео на день. За тиждень отримала перші перегляди й дохід. Зараз веде 3 акаунти, автоматизувавши процес, і заробляє пасивно!</p>
+                </div>
+                <div class="example-card example-right">
+                    <h3>Максим К******</h3>
+                    <img src="https://i.ibb.co/jkKb4NQV/617ff3a2cf4e7b8998c690f8-5efb74169727e79ec77b7bca-raskrutka-tiktok-opisanie-1024x943-1.png" alt="TikTok Фітнес">
+                    <div class="stats">
+                        <span>20 днів</span>
+                        <span>2 акаунти</span>
+                        <span class="income">$1200</span>
+                    </div>
+                    <p class="description">Максим завантажив перше відео через день після старту. Використав наші шаблони контенту, і перегляди пішли вгору. Зараз його дохід стабільно зростає!</p>
+                </div>
+                <div class="example-card example-left">
+                    <h3>Юлія П******</h3>
+                    <img src="https://i.ibb.co/0yYssTX0/617ff3a2cf4e7b8998c690f8-5efb74169727e79ec77b7bca-raskrutka-tiktok-opisanie-1024x943-2.png" alt="TikTok Краса">
+                    <div class="stats">
+                        <span>25 днів</span>
+                        <span>4 акаунти</span>
+                        <span class="income">$3600</span>
+                    </div>
+                    <p class="description">Юлія отримала перші перегляди через 2 дні. Наші стратегії допомогли їй масштабувати акаунти. Зараз вона заробляє, витрачаючи лише 1 годину на день!</p>
+                </div>
+                <div class="example-card example-right">
+                    <h3>Артем В******</h3>
+                    <img src="https://via.placeholder.com/300x200?text=TikTok+Гумор" alt="TikTok Гумор">
+                    <div class="stats">
+                        <span>15 днів</span>
+                        <span>2 акаунти</span>
+                        <span class="income">$900</span>
+                    </div>
+                    <p class="description">Артем стартував із гумористичних відео. Перший дохід отримав через 3 дні. Зараз його акаунти приносять стабільний прибуток завдяки нашим лайфхакам!</p>
+                </div>
+            </div>
+            <div class="motivation-box">
+                <p>Це ваш шанс змінити життя! Наші учні вже заробляють на TikTok, і ви можете бути наступним. Зробіть перший крок до успіху прямо зараз!</p>
+            </div>
+            <button class="cta-btn" onclick="showSection(4)">Далі</button>
+        </div>
+    </section>
+
+    <!-- Секція 4: Кроки співпраці -->
+    <section class="steps-section" id="section4">
+        <div class="container">
+            <h1 class="section-title">Як почати заробляти?</h1>
+            <p class="section-subtitle">Лише 4 простих кроки до вашого успіху на TikTok!</p>
+            <div class="steps-list">
+                <div class="step">
+                    <h2>Ви створюєте</h2>
+                    <p>Створюйте прості відео за нашими шаблонами – без складних навичок чи обладнання.</p>
+                    <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+                </div>
+                <div class="step">
+                    <h2>Ви публікуєте</h2>
+                    <p>Завантажуйте відео на TikTok, використовуючи наші стратегії для максимальних переглядів.</p>
+                    <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+                </div>
+                <div class="step">
+                    <h2>Ви отримуєте перегляди</h2>
+                    <p>Ваш контент набирає перегляди завдяки нашим перевіреним методам просування.</p>
+                    <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+                </div>
+                <div class="step">
+                    <h2>Ви заробляєте</h2>
+                    <p>Отримуйте дохід від переглядів і монетизації контенту з кожним відео!</p>
+                </div>
+            </div>
+            <div class="motivation-box">
+                <p><strong>Це дійсно просто!</strong><br>Заробіток на TikTok доступний кожному, і ми покажемо, як це зробити. Більшість не починають, бо бояться, але ви – не з них. Натисніть "Почати" і зробіть перший крок!</p>
+                <p><br><strong>Здивовані, що це так легко?</strong><br>Ми надамо всі інструменти, шаблони та стратегії. Ваш успіх на TikTok чекає – приєднуйтесь зараз!</p>
+            </div>
+            <a href="tiktok-course.html" class="cta-btn">Почати заробляти</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
